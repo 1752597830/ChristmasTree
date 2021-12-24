@@ -232,7 +232,8 @@
      }
  
      function loadAudio(i) {
-
+      document.getElementById("overlay").innerHTML =
+      '<div class="text-loading">正在加载音乐，请稍等...</div>';
       const loader = new THREE.AudioLoader();
       loader.load('1.mp3', function (buffer) {
        audio.setBuffer(buffer);
