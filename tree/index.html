@@ -248,6 +248,8 @@
  
  
      function uploadAudio(event) {
+      document.getElementById("overlay").innerHTML =
+      '<div class="text-loading">请稍等...</div>';
       const files = event.target.files;
       const reader = new FileReader();
  
